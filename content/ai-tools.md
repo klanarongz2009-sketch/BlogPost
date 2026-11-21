@@ -21,7 +21,7 @@ These are tools I actually use, and what I use each one for. This is my experien
 
 ## Building platforms
 
-I build small games and apps on AI creation platforms. See [MiniApps](../miniapps/) for what I made and where.
+I give app ideas to different AIs and let each one build a new app from scratch. See [MiniApps](../miniapps/) for each app and the AI that built it.
 
 ## How I choose (opinion)
 

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Free skill library | BlogPost by Bogus</title>
+<meta name="description" content="Eight free, standalone SKILL.md files for indie makers who work with AI agents. MIT licensed.">
+<link rel="alternate" type="application/rss+xml" title="BlogPost by Bogus" href="../feed.xml">
+<style>:root{color-scheme:dark;--bg:#0d1117;--fg:#e6edf3;--mut:#9da7b3;--acc:#7cc4ff;--card:#161b22;--line:#30363d}
+@media (prefers-color-scheme: light){:root.auto{color-scheme:light;--bg:#ffffff;--fg:#1f2328;--mut:#57606a;--acc:#0b63c5;--card:#f6f8fa;--line:#d0d7de}}
+*{box-sizing:border-box}html{font-size:17px}body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.65 system-ui,-apple-system,"Segoe UI","Noto Sans Thai","Noto Sans",sans-serif}
+a{color:var(--acc)}a:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--card);padding:6px 10px;z-index:9}
+header,main,footer{max-width:46rem;margin:0 auto;padding:0 1rem}
+header{padding-top:1.4rem;border-bottom:1px solid var(--line)}
+.brand{font-size:1.35rem;font-weight:700;color:var(--fg);text-decoration:none}.tag{color:var(--mut);margin:.1rem 0 .8rem}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:.3rem 1rem;padding:0;margin:0 0 .9rem}nav a{text-decoration:none}nav a[aria-current]{font-weight:700;text-decoration:underline}
+main{padding-top:1rem;padding-bottom:2rem}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.3rem;margin-top:2rem}h3{font-size:1.08rem}
+code{background:var(--card);padding:.1rem .3rem;border-radius:4px;font-size:.9em}pre{background:var(--card);padding:.8rem;border-radius:6px;overflow-x:auto;border:1px solid var(--line)}pre code{padding:0;background:none}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:.35rem .55rem;text-align:left;vertical-align:top}
+blockquote{margin:1rem 0;padding:.2rem 1rem;border-left:4px solid var(--acc);background:var(--card)}
+.meta{color:var(--mut);font-size:.9rem}.posts{list-style:none;padding:0}.posts li{margin:.7rem 0}
+footer{border-top:1px solid var(--line);padding:1rem;color:var(--mut);font-size:.9rem}</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="brand" href="../">BlogPost by Bogus</a>
+<p class="tag">Indie for indie. Notes from a solo indie maker who builds with AI agents, for other indie makers.</p>
+<nav aria-label="Main"><ul><li><a href="../">Home</a></li><li><a href="../about/">About</a></li><li><a href="../how-i-use-ai/">How I use AI</a></li><li><a href="../ai-tools/">AI tools</a></li><li><a href="../skills/" aria-current="page">Skill library</a></li><li><a href="../miniapps/">MiniApps</a></li><li><a href="../projects/">Projects</a></li><li><a href="../posts/">Posts</a></li><li><a href="../request/">Request</a></li><li><a href="../th/">ไทย</a></li></ul></nav>
+</header>
+<main id="main">
+<h1 id="free-skill-library">Free skill library</h1>
+<p>These are skills I use every day, rewritten as standalone files with nothing private in them. Each is one <code>SKILL.md</code> file: a name, a one-line description, and plain instructions an agent follows. They are free under the <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE">MIT license</a> and provided as is, without warranty.</p>
+<p>They are written for solo makers: no paid service is needed, and most need only an agent that can read files and, for some, run shell commands or fetch web pages.</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/text-to-verbatim-prompt/SKILL.md">text-to-verbatim-prompt</a></td>
+<td>Turns any text into an English prompt that lets another AI rebuild the text exactly, without the text itself appearing in the prompt. Includes a compare step.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/tech-first-prompt-classifier/SKILL.md">tech-first-prompt-classifier</a></td>
+<td>Scores any input on six dimensions as KEY = VALUE lines, then rewrites it to fix the weak points.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/false-negative-guard/SKILL.md">false-negative-guard</a></td>
+<td>Before an agent reports "not found" or "none", re-checks with a second, different method.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/fact-checker/SKILL.md">fact-checker</a></td>
+<td>Checks claims against real sources before they go into published work or to another AI.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/prompt-to-skill/SKILL.md">prompt-to-skill</a></td>
+<td>Turns a prompt you keep re-pasting into a saved skill, keeping your words verbatim.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/md-sub-agent/SKILL.md">md-sub-agent</a></td>
+<td>A Markdown specialist: writes, converts, fixes, and organizes <code>.md</code> files.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/task-watchdog/SKILL.md">task-watchdog</a></td>
+<td>Watches long-running agent tasks and checks finished ones against the real files. Reports only when something is wrong.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/link-page-monitor/SKILL.md">link-page-monitor</a></td>
+<td>Checks a link-in-bio page (such as Linktree) for changed, broken, or redirected links, against a saved baseline.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="install">Install</h2>
+<p>The files follow the common <code>SKILL.md</code> layout (YAML front matter with <code>name</code> and <code>description</code>, then instructions), so they work with agents that load skills from a folder, and as plain instructions anywhere else.</p>
+<ol>
+<li>Download the folder of the skill you want from the <a href="https://github.com/klanarongz2009-sketch/BlogPost/tree/main/skills">skills directory</a>, or clone the repo:</li>
+</ol>
+<p><code>bash
+   git clone https://github.com/klanarongz2009-sketch/BlogPost.git</code></p>
+<ol start="2">
+<li>Copy the skill folder (for example <code>skills/false-negative-guard/</code>) into the skills folder your agent reads. For agents that keep skills per project, that is usually a <code>skills/</code> folder in the project.</li>
+<li>If your assistant has no skill folder, open the <code>SKILL.md</code> and paste its contents into the assistant's custom skill, custom instructions, or a new chat.</li>
+<li>Ask the agent to use it by name, or let it pick the skill when the description matches.</li>
+</ol>
+<h2 id="adapting-tips">Adapting (tips)</h2>
+<ul>
+<li>Keep the description line specific; agents use it to decide when to load the skill.</li>
+<li>Replace example paths with your own. None of the files need an API key.</li>
+<li>If you improve one, a pull request is welcome; see <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/CONTRIBUTING.md">CONTRIBUTING</a>.</li>
+</ul>
+</main>
+<footer>
+<p>Indie for indie. Posts: <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE-CONTENT">CC BY 4.0</a>. Skills and code: <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE">MIT</a>, free and provided as is.
+<a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/PROJECT_NOTICE.md">Project notice</a> (<a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/PROJECT_NOTICE.th.md">ไทย</a>): replies can be slow and the site may pause. Opinions are personal; nothing here is sponsored.
+<a href="../feed.xml">RSS</a> · <a href="https://github.com/klanarongz2009-sketch/BlogPost">Source</a></p>
+</footer>
+</body>
+</html>

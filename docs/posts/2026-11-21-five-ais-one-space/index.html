@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Five AIs, one missing space: a Thai verbatim test | BlogPost by Bogus</title>
+<meta name="description" content="Three of five AIs rebuilt a Thai-English text exactly from a word-by-word prompt. Two dropped one space between Thai words.">
+<link rel="alternate" type="application/rss+xml" title="BlogPost by Bogus" href="../../feed.xml">
+<style>:root{color-scheme:dark;--bg:#0d1117;--fg:#e6edf3;--mut:#9da7b3;--acc:#7cc4ff;--card:#161b22;--line:#30363d}
+@media (prefers-color-scheme: light){:root.auto{color-scheme:light;--bg:#ffffff;--fg:#1f2328;--mut:#57606a;--acc:#0b63c5;--card:#f6f8fa;--line:#d0d7de}}
+*{box-sizing:border-box}html{font-size:17px}body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.65 system-ui,-apple-system,"Segoe UI","Noto Sans Thai","Noto Sans",sans-serif}
+a{color:var(--acc)}a:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--card);padding:6px 10px;z-index:9}
+header,main,footer{max-width:46rem;margin:0 auto;padding:0 1rem}
+header{padding-top:1.4rem;border-bottom:1px solid var(--line)}
+.brand{font-size:1.35rem;font-weight:700;color:var(--fg);text-decoration:none}.tag{color:var(--mut);margin:.1rem 0 .8rem}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:.3rem 1rem;padding:0;margin:0 0 .9rem}nav a{text-decoration:none}nav a[aria-current]{font-weight:700;text-decoration:underline}
+main{padding-top:1rem;padding-bottom:2rem}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.3rem;margin-top:2rem}h3{font-size:1.08rem}
+code{background:var(--card);padding:.1rem .3rem;border-radius:4px;font-size:.9em}pre{background:var(--card);padding:.8rem;border-radius:6px;overflow-x:auto;border:1px solid var(--line)}pre code{padding:0;background:none}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:.35rem .55rem;text-align:left;vertical-align:top}
+blockquote{margin:1rem 0;padding:.2rem 1rem;border-left:4px solid var(--acc);background:var(--card)}
+.meta{color:var(--mut);font-size:.9rem}.posts{list-style:none;padding:0}.posts li{margin:.7rem 0}
+footer{border-top:1px solid var(--line);padding:1rem;color:var(--mut);font-size:.9rem}</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="brand" href="../../">BlogPost by Bogus</a>
+<p class="tag">Indie for indie. Notes from a solo indie maker who builds with AI agents, for other indie makers.</p>
+<nav aria-label="Main"><ul><li><a href="../../">Home</a></li><li><a href="../../about/">About</a></li><li><a href="../../how-i-use-ai/">How I use AI</a></li><li><a href="../../ai-tools/">AI tools</a></li><li><a href="../../skills/">Skill library</a></li><li><a href="../../miniapps/">MiniApps</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../posts/">Posts</a></li><li><a href="../../request/">Request</a></li><li><a href="../../th/">ไทย</a></li></ul></nav>
+</header>
+<main id="main">
+<article><h1>Five AIs, one missing space: a Thai verbatim test</h1><p class="meta">2026-11-21</p><p>Thai does not put spaces between words. That makes it a good stress test: can an AI copy Thai text exactly, spaces included, when it is told exactly what to write?</p>
+<h2 id="the-test">The test</h2>
+<p>I took a 12-line Thai-English report (9 lines of text, 3 blank, 1,087 characters) and turned it into an English prompt with my <a href="../../skills/">Text to verbatim prompt</a> skill. The prompt does not contain the text. It describes every line word by word, gives the word and character count for each line, and lists the tokens that must not change.</p>
+<p>Five AIs got the same prompt. I scored the answers by exact character match in Python.</p>
+<h2 id="results">Results</h2>
+<table>
+<thead>
+<tr>
+<th>AI</th>
+<th>Exact match</th>
+<th>Characters</th>
+<th>Lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overlay.one</td>
+<td>yes</td>
+<td>1,087 / 1,087</td>
+<td>12 / 12</td>
+</tr>
+<tr>
+<td>Sesame (Simone)</td>
+<td>yes</td>
+<td>1,087 / 1,087</td>
+<td>12 / 12</td>
+</tr>
+<tr>
+<td>Qwen</td>
+<td>yes</td>
+<td>1,087 / 1,087</td>
+<td>12 / 12</td>
+</tr>
+<tr>
+<td>Wabi</td>
+<td>no</td>
+<td>1,086 / 1,087</td>
+<td>11 / 12</td>
+</tr>
+<tr>
+<td>Tagentic1</td>
+<td>no</td>
+<td>1,086 / 1,087</td>
+<td>11 / 12</td>
+</tr>
+</tbody>
+</table>
+<p>Wabi and Tagentic1 made the same single error on line 6: they joined two Thai words that the prompt listed as separate words. The prompt said line 6 has 23 words and 156 characters; both answers had 22 and 155.</p>
+<p>Every AI got the harder-looking parts right: an em dash, straight quotes, a URL with a trailing slash, a deliberately lowercase "Ai", and the blank lines.</p>
+<h2 id="why-it-might-happen-hypotheses">Why it might happen (hypotheses)</h2>
+<ul>
+<li>In normal Thai, those two words are often written together as one phrase, so a model may "fix" the spacing.</li>
+<li>One of the words appears elsewhere in the prompt as part of a joined compound, which may prime the model to join it again.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>One run, one text. The answers were copied from chat apps, which can also change whitespace. This shows a failure mode, not a ranking.</p>
+<h2 id="what-i-changed">What I changed</h2>
+<p>Tagentic1 is my own model, so I opened <a href="https://github.com/klanarongz2009-sketch/ter-ai/issues/18">issue #18</a>: keep spacing exactly as specified, check word and character counts per line after answering, and add a regression test for this exact case.</p>
+<p><strong>Tip for indie makers:</strong> if your product handles Thai (or any language without spaces), add one exact-copy test like this. It is cheap and it catches a real class of bugs.</p></article>
+</main>
+<footer>
+<p>Indie for indie. Posts: <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE-CONTENT">CC BY 4.0</a>. Skills and code: <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE">MIT</a>, free and provided as is.
+<a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/PROJECT_NOTICE.md">Project notice</a> (<a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/PROJECT_NOTICE.th.md">ไทย</a>): replies can be slow and the site may pause. Opinions are personal; nothing here is sponsored.
+<a href="../../feed.xml">RSS</a> · <a href="https://github.com/klanarongz2009-sketch/BlogPost">Source</a></p>
+</footer>
+</body>
+</html>

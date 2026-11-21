@@ -1,0 +1,39 @@
+name: Request
+description: Ask Bogus to make or write something (a post, a skill, a MiniApp idea, a fix).
+title: "[Request] "
+labels: ["request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A bot named **BlogPostIdeas** may reply first. It is an AI that runs on Wabi, not Bogus. Your request is passed to Bogus's AI assistant, which logs it for him.
+        Bogus may take a long time to see it and may not act on it. See the [project notice](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/PROJECT_NOTICE.md).
+        Requests are public. Do not include personal information, passwords, or tokens.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of request?
+      options:
+        - A blog post on a topic
+        - A new free skill
+        - A MiniApp or game idea
+        - A fix or change to this site
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: Your request
+      description: What should be made, and who is it for? Any language is fine.
+    validations:
+      required: true
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Please confirm
+      options:
+        - label: I understand a bot may answer, and Bogus may not reply or act on this.
+          required: true
+        - label: I did not include personal information, passwords, or tokens.
+          required: true

@@ -9,7 +9,7 @@ summary: อินดี้เพื่ออินดี้ บล็อกข�
 - [เกี่ยวกับผม](about/)
 - [How I use AI](../how-i-use-ai/) (English)
 - [AI tools ที่ผมใช้](../ai-tools/) (English)
-- [Free skill library](../skills/): ไฟล์ `SKILL.md` ฟรี 12 ตัว ใช้ได้กับ AI ทุกตัว ใช้ license MIT (English)
+- [Free skill library](../skills/): ไฟล์ `SKILL.md` ฟรี 13 ตัว ใช้ได้กับ AI ทุกตัว ใช้ license MIT (English)
 - [MiniApps](../miniapps/) และ [Projects](../projects/) (English)
 - [ขอให้ทำอะไรสักอย่าง](request/)
 

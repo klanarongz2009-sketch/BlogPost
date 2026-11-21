@@ -11,7 +11,7 @@ What you will find here:
 - **[About](about/)**: who I am as a maker, and how I work.
 - **[How I use AI](how-i-use-ai/)**: sub-agents, memory, verification, scheduled routines, and Thai AI quality testing, with real examples.
 - **[AI tools I use](ai-tools/)**: the assistants and models I actually use, and what I use each one for. Opinions, not endorsements.
-- **[Free skill library](skills/)**: twelve standalone `SKILL.md` files that work with any AI assistant or agent. MIT licensed.
+- **[Free skill library](skills/)**: thirteen standalone `SKILL.md` files that work with any AI assistant or agent. MIT licensed.
 - **[MiniApps](miniapps/)**: new apps built from scratch by different AIs, one AI per app.
 - **[Projects](projects/)**: TER-AI, Tagentic1, and other projects.
 - **[Thai version](th/)** of the key pages.

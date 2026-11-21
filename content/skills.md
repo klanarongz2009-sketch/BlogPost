@@ -1,6 +1,6 @@
 ---
 title: Free skill library
-summary: Twelve free, standalone SKILL.md files that work with any AI assistant or agent. MIT licensed.
+summary: Thirteen free, standalone SKILL.md files that work with any AI assistant or agent. MIT licensed.
 ---
 # Free skill library
 
@@ -22,6 +22,7 @@ No paid service is needed for any of them.
 | [text-to-voice-with-ai](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/text-to-voice-with-ai/SKILL.md) | Turns your exact text into audio with whatever text-to-speech the AI has, free or local engines first, with a speech-recognition check before sending. | A text-to-speech capability |
 | [typing-analysis-sub-agent](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/typing-analysis-sub-agent/SKILL.md) | Reads your messages through a personal typing profile so the AI acts on what you meant, and learns new typo patterns only from evidence. | Persistent files; chat history for updates |
 | [vm-control-panel](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/vm-control-panel/SKILL.md) | A control panel for the AI's own machine: system info, shell commands, files, status, and processes, with a confirm step for destructive actions. | A VM, container, or sandbox the AI controls; stops if there is none |
+| [ai-memory-continuity](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/ai-memory-continuity/SKILL.md) | Before personalized or follow-up work, finds the relevant long-term context in your `USER.md` and `MEMORY.md` files or a connected memory tool, prefers current statements over old notes, and never claims a read that did not happen. | Any AI; memory files or a memory tool for recall |
 
 ## Install
 

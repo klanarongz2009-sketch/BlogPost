@@ -20,4 +20,4 @@ Tagentic1 is a local thinking-and-agentic model setup inside the TER-AI project:
 
 ## AI memory continuity
 
-[ai-memory-continuity](https://github.com/klanarongz2009-sketch/ai-memory-continuity): a provider-neutral agent skill for persistent memory across AI sessions (MIT).
+[ai-memory-continuity](https://github.com/klanarongz2009-sketch/BlogPost/tree/main/skills/ai-memory-continuity): a provider-neutral agent skill for persistent memory across AI sessions (MIT). It is now part of the [free skill library](../skills/); the [original repo](https://github.com/klanarongz2009-sketch/ai-memory-continuity) stays up.

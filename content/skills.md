@@ -1,23 +1,27 @@
 ---
 title: Free skill library
-summary: Eight free, standalone SKILL.md files for indie makers who work with AI agents. MIT licensed.
+summary: Twelve free, standalone SKILL.md files that work with any AI assistant or agent. MIT licensed.
 ---
 # Free skill library
 
-These are skills I use every day, rewritten as standalone files with nothing private in them. Each is one `SKILL.md` file: a name, a one-line description, and plain instructions an agent follows. They are free under the [MIT license](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE) and provided as is, without warranty.
+These are skills I use every day, rewritten so that any AI can run them: ChatGPT, Claude, Gemini, local models, Wabi, or any agent that reads instructions. Each is one `SKILL.md` file: a name, a one-line description, and plain instructions. Nothing in them is tied to one provider: where a step needs a feature (a terminal, a scheduler, memory files, interactive cards, text-to-speech), the file says so and gives a fallback or a clear stop message. They are free under the [MIT license](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE) and provided as is, without warranty.
 
-They are written for solo makers: no paid service is needed, and most need only an agent that can read files and, for some, run shell commands or fetch web pages.
+No paid service is needed for any of them.
 
-| Skill | What it does |
-|---|---|
-| [text-to-verbatim-prompt](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/text-to-verbatim-prompt/SKILL.md) | Turns any text into an English prompt that lets another AI rebuild the text exactly, without the text itself appearing in the prompt. Includes a compare step. |
-| [tech-first-prompt-classifier](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/tech-first-prompt-classifier/SKILL.md) | Scores any input on six dimensions as KEY = VALUE lines, then rewrites it to fix the weak points. |
-| [false-negative-guard](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/false-negative-guard/SKILL.md) | Before an agent reports "not found" or "none", re-checks with a second, different method. |
-| [fact-checker](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/fact-checker/SKILL.md) | Checks claims against real sources before they go into published work or to another AI. |
-| [prompt-to-skill](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/prompt-to-skill/SKILL.md) | Turns a prompt you keep re-pasting into a saved skill, keeping your words verbatim. |
-| [md-sub-agent](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/md-sub-agent/SKILL.md) | A Markdown specialist: writes, converts, fixes, and organizes `.md` files. |
-| [task-watchdog](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/task-watchdog/SKILL.md) | Watches long-running agent tasks and checks finished ones against the real files. Reports only when something is wrong. |
-| [link-page-monitor](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/link-page-monitor/SKILL.md) | Checks a link-in-bio page (such as Linktree) for changed, broken, or redirected links, against a saved baseline. |
+| Skill | What it does | Requires |
+|---|---|---|
+| [text-to-verbatim-prompt](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/text-to-verbatim-prompt/SKILL.md) | Turns any text into an English prompt that lets another AI write the text out exactly, without the text itself appearing in the prompt. Includes a compare step. | Any AI; running scripts recommended for counting |
+| [auto-update-agent-memory](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/auto-update-agent-memory/SKILL.md) | Adds, updates, and removes memory entries (rules, preferences, thoughts, ideas, facts) on its own whenever a change is detected, never on a timer. | Persistent memory the AI can write; else outputs the memory file |
+| [ai-night-shift](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/ai-night-shift/SKILL.md) | An unattended late-night session: the AI picks useful work for your projects, does it within hard limits, logs everything, and reports in the morning. | A scheduler; else run it manually |
+| [interactive-ui-in-chat](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/interactive-ui-in-chat/SKILL.md) | Builds a working UI inside the chat as interactive question cards (menus, quizzes, wizards), not an HTML file, and saves each one as a skill. | Interactive cards in the chat; else a numbered text menu |
+| [prompt-to-skill](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/prompt-to-skill/SKILL.md) | Turns a prompt you keep re-pasting into a saved skill, keeping your words verbatim and adding a separate execution layer. | A place to save skills or instructions; else outputs the file |
+| [agent-settings](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/agent-settings/SKILL.md) | A settings layer for your assistant: type any change in plain language and it is applied, with storage cleanup on detection and a factory reset. | A persistent settings file; some features need shell access |
+| [subagent-creator-and-promptor](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/subagent-creator-and-promptor/SKILL.md) | Turns a prompt into a sub-agent spec and runs it, or builds one relay file for another AI with a source-routing rule; also exports your profile for any AI. | Any AI |
+| [tech-first-prompt-classifier](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/tech-first-prompt-classifier/SKILL.md) | Scores any input on six dimensions as KEY = VALUE lines, lists the issues, and returns a fixed version. | Any AI |
+| [terminal-in-chat](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/terminal-in-chat/SKILL.md) | A terminal in the chat: type or paste commands, or describe the task in plain language, and the AI runs it for real and shows the output. | A real terminal (shell execution); stops if there is none |
+| [text-to-voice-with-ai](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/text-to-voice-with-ai/SKILL.md) | Turns your exact text into audio with whatever text-to-speech the AI has, free or local engines first, with a speech-recognition check before sending. | A text-to-speech capability |
+| [typing-analysis-sub-agent](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/typing-analysis-sub-agent/SKILL.md) | Reads your messages through a personal typing profile so the AI acts on what you meant, and learns new typo patterns only from evidence. | Persistent files; chat history for updates |
+| [vm-control-panel](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/vm-control-panel/SKILL.md) | A control panel for the AI's own machine: system info, shell commands, files, status, and processes, with a confirm step for destructive actions. | A VM, container, or sandbox the AI controls; stops if there is none |
 
 ## Install
 
@@ -29,12 +33,13 @@ The files follow the common `SKILL.md` layout (YAML front matter with `name` and
    git clone https://github.com/klanarongz2009-sketch/BlogPost.git
    ```
 
-2. Copy the skill folder (for example `skills/false-negative-guard/`) into the skills folder your agent reads. For agents that keep skills per project, that is usually a `skills/` folder in the project.
-3. If your assistant has no skill folder, open the `SKILL.md` and paste its contents into the assistant's custom skill, custom instructions, or a new chat.
-4. Ask the agent to use it by name, or let it pick the skill when the description matches.
+2. Copy the skill folder (for example `skills/prompt-to-skill/`) into the skills folder your agent reads. For agents that keep skills per project, that is usually a `skills/` folder in the project.
+3. If your assistant has no skill folder, open the `SKILL.md` and paste its contents into the assistant's custom skill, custom instructions, project instructions, or a new chat.
+4. Ask the AI to use it by name, or let it pick the skill when the description matches.
 
 ## Adapting (tips)
 
 - Keep the description line specific; agents use it to decide when to load the skill.
-- Replace example paths with your own. None of the files need an API key.
+- Each file starts with what it needs. If your AI lacks a feature, the skill tells it to fall back or to stop with a clear message instead of pretending.
+- Replace example file names with your own. None of the files need an API key.
 - If you improve one, a pull request is welcome; see [CONTRIBUTING](https://github.com/klanarongz2009-sketch/BlogPost/blob/main/CONTRIBUTING.md).

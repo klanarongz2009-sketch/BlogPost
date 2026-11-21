@@ -1,7 +1,7 @@
 ---
 title: Never trust "not found" from an agent
 date: 2026-11-21
-summary: Why I run a second check on every negative result, and the free skill that does it.
+summary: Why I run a second check on every negative result before an agent reports it.
 ---
 An agent that says "done" can be checked: open the file, run the test. An agent that says "not found" is harder. Nothing appears, so nothing looks wrong.
 
@@ -23,4 +23,4 @@ My link-page monitor once got HTTP 403 from three music links. A naive report wo
 
 ## Take it
 
-The [false-negative-guard](../../skills/) skill is free (MIT). Drop it into your agent's skills folder. Pair it with [fact-checker](../../skills/) for positive claims.
+The rule above is all you need: add it to your agent's instructions. In my own setup it runs as a private skill tied to my assistant, so it is not in the [skill library](../../skills/).

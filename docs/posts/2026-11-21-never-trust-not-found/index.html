@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
 <title>Never trust &quot;not found&quot; from an agent | BlogPost by Bogus</title>
-<meta name="description" content="Why I run a second check on every negative result, and the free skill that does it.">
+<meta name="description" content="Why I run a second check on every negative result before an agent reports it.">
 <link rel="alternate" type="application/rss+xml" title="BlogPost by Bogus" href="../../feed.xml">
 <style>:root{color-scheme:dark;--bg:#0d1117;--fg:#e6edf3;--mut:#9da7b3;--acc:#7cc4ff;--card:#161b22;--line:#30363d}
 @media (prefers-color-scheme: light){:root.auto{color-scheme:light;--bg:#ffffff;--fg:#1f2328;--mut:#57606a;--acc:#0b63c5;--card:#f6f8fa;--line:#d0d7de}}
@@ -44,7 +44,7 @@ footer{border-top:1px solid var(--line);padding:1rem;color:var(--mut);font-size:
 <h2 id="example">Example</h2>
 <p>My link-page monitor once got HTTP 403 from three music links. A naive report would call them broken. The second check pointed to the site blocking automated requests, not to broken pages, so the report said "unconfirmed" instead of "broken". In a later check the same links returned 200.</p>
 <h2 id="take-it">Take it</h2>
-<p>The <a href="../../skills/">false-negative-guard</a> skill is free (MIT). Drop it into your agent's skills folder. Pair it with <a href="../../skills/">fact-checker</a> for positive claims.</p></article>
+<p>The rule above is all you need: add it to your agent's instructions. In my own setup it runs as a private skill tied to my assistant, so it is not in the <a href="../../skills/">skill library</a>.</p></article>
 </main>
 <footer>
 <p>Indie for indie. Posts: <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE-CONTENT">CC BY 4.0</a>. Skills and code: <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE">MIT</a>, free and provided as is.

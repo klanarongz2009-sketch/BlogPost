@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
 <title>Free skill library | BlogPost by Bogus</title>
-<meta name="description" content="Eight free, standalone SKILL.md files for indie makers who work with AI agents. MIT licensed.">
+<meta name="description" content="Twelve free, standalone SKILL.md files that work with any AI assistant or agent. MIT licensed.">
 <link rel="alternate" type="application/rss+xml" title="BlogPost by Bogus" href="../feed.xml">
 <style>:root{color-scheme:dark;--bg:#0d1117;--fg:#e6edf3;--mut:#9da7b3;--acc:#7cc4ff;--card:#161b22;--line:#30363d}
 @media (prefers-color-scheme: light){:root.auto{color-scheme:light;--bg:#ffffff;--fg:#1f2328;--mut:#57606a;--acc:#0b63c5;--card:#f6f8fa;--line:#d0d7de}}
@@ -32,47 +32,76 @@ footer{border-top:1px solid var(--line);padding:1rem;color:var(--mut);font-size:
 </header>
 <main id="main">
 <h1 id="free-skill-library">Free skill library</h1>
-<p>These are skills I use every day, rewritten as standalone files with nothing private in them. Each is one <code>SKILL.md</code> file: a name, a one-line description, and plain instructions an agent follows. They are free under the <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE">MIT license</a> and provided as is, without warranty.</p>
-<p>They are written for solo makers: no paid service is needed, and most need only an agent that can read files and, for some, run shell commands or fetch web pages.</p>
+<p>These are skills I use every day, rewritten so that any AI can run them: ChatGPT, Claude, Gemini, local models, Wabi, or any agent that reads instructions. Each is one <code>SKILL.md</code> file: a name, a one-line description, and plain instructions. Nothing in them is tied to one provider: where a step needs a feature (a terminal, a scheduler, memory files, interactive cards, text-to-speech), the file says so and gives a fallback or a clear stop message. They are free under the <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/LICENSE">MIT license</a> and provided as is, without warranty.</p>
+<p>No paid service is needed for any of them.</p>
 <table>
 <thead>
 <tr>
 <th>Skill</th>
 <th>What it does</th>
+<th>Requires</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/text-to-verbatim-prompt/SKILL.md">text-to-verbatim-prompt</a></td>
-<td>Turns any text into an English prompt that lets another AI rebuild the text exactly, without the text itself appearing in the prompt. Includes a compare step.</td>
+<td>Turns any text into an English prompt that lets another AI write the text out exactly, without the text itself appearing in the prompt. Includes a compare step.</td>
+<td>Any AI; running scripts recommended for counting</td>
 </tr>
 <tr>
-<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/tech-first-prompt-classifier/SKILL.md">tech-first-prompt-classifier</a></td>
-<td>Scores any input on six dimensions as KEY = VALUE lines, then rewrites it to fix the weak points.</td>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/auto-update-agent-memory/SKILL.md">auto-update-agent-memory</a></td>
+<td>Adds, updates, and removes memory entries (rules, preferences, thoughts, ideas, facts) on its own whenever a change is detected, never on a timer.</td>
+<td>Persistent memory the AI can write; else outputs the memory file</td>
 </tr>
 <tr>
-<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/false-negative-guard/SKILL.md">false-negative-guard</a></td>
-<td>Before an agent reports "not found" or "none", re-checks with a second, different method.</td>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/ai-night-shift/SKILL.md">ai-night-shift</a></td>
+<td>An unattended late-night session: the AI picks useful work for your projects, does it within hard limits, logs everything, and reports in the morning.</td>
+<td>A scheduler; else run it manually</td>
 </tr>
 <tr>
-<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/fact-checker/SKILL.md">fact-checker</a></td>
-<td>Checks claims against real sources before they go into published work or to another AI.</td>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/interactive-ui-in-chat/SKILL.md">interactive-ui-in-chat</a></td>
+<td>Builds a working UI inside the chat as interactive question cards (menus, quizzes, wizards), not an HTML file, and saves each one as a skill.</td>
+<td>Interactive cards in the chat; else a numbered text menu</td>
 </tr>
 <tr>
 <td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/prompt-to-skill/SKILL.md">prompt-to-skill</a></td>
-<td>Turns a prompt you keep re-pasting into a saved skill, keeping your words verbatim.</td>
+<td>Turns a prompt you keep re-pasting into a saved skill, keeping your words verbatim and adding a separate execution layer.</td>
+<td>A place to save skills or instructions; else outputs the file</td>
 </tr>
 <tr>
-<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/md-sub-agent/SKILL.md">md-sub-agent</a></td>
-<td>A Markdown specialist: writes, converts, fixes, and organizes <code>.md</code> files.</td>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/agent-settings/SKILL.md">agent-settings</a></td>
+<td>A settings layer for your assistant: type any change in plain language and it is applied, with storage cleanup on detection and a factory reset.</td>
+<td>A persistent settings file; some features need shell access</td>
 </tr>
 <tr>
-<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/task-watchdog/SKILL.md">task-watchdog</a></td>
-<td>Watches long-running agent tasks and checks finished ones against the real files. Reports only when something is wrong.</td>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/subagent-creator-and-promptor/SKILL.md">subagent-creator-and-promptor</a></td>
+<td>Turns a prompt into a sub-agent spec and runs it, or builds one relay file for another AI with a source-routing rule; also exports your profile for any AI.</td>
+<td>Any AI</td>
 </tr>
 <tr>
-<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/link-page-monitor/SKILL.md">link-page-monitor</a></td>
-<td>Checks a link-in-bio page (such as Linktree) for changed, broken, or redirected links, against a saved baseline.</td>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/tech-first-prompt-classifier/SKILL.md">tech-first-prompt-classifier</a></td>
+<td>Scores any input on six dimensions as KEY = VALUE lines, lists the issues, and returns a fixed version.</td>
+<td>Any AI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/terminal-in-chat/SKILL.md">terminal-in-chat</a></td>
+<td>A terminal in the chat: type or paste commands, or describe the task in plain language, and the AI runs it for real and shows the output.</td>
+<td>A real terminal (shell execution); stops if there is none</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/text-to-voice-with-ai/SKILL.md">text-to-voice-with-ai</a></td>
+<td>Turns your exact text into audio with whatever text-to-speech the AI has, free or local engines first, with a speech-recognition check before sending.</td>
+<td>A text-to-speech capability</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/typing-analysis-sub-agent/SKILL.md">typing-analysis-sub-agent</a></td>
+<td>Reads your messages through a personal typing profile so the AI acts on what you meant, and learns new typo patterns only from evidence.</td>
+<td>Persistent files; chat history for updates</td>
+</tr>
+<tr>
+<td><a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/skills/vm-control-panel/SKILL.md">vm-control-panel</a></td>
+<td>A control panel for the AI's own machine: system info, shell commands, files, status, and processes, with a confirm step for destructive actions.</td>
+<td>A VM, container, or sandbox the AI controls; stops if there is none</td>
 </tr>
 </tbody>
 </table>
@@ -84,14 +113,15 @@ footer{border-top:1px solid var(--line);padding:1rem;color:var(--mut);font-size:
 <p><code>bash
    git clone https://github.com/klanarongz2009-sketch/BlogPost.git</code></p>
 <ol start="2">
-<li>Copy the skill folder (for example <code>skills/false-negative-guard/</code>) into the skills folder your agent reads. For agents that keep skills per project, that is usually a <code>skills/</code> folder in the project.</li>
-<li>If your assistant has no skill folder, open the <code>SKILL.md</code> and paste its contents into the assistant's custom skill, custom instructions, or a new chat.</li>
-<li>Ask the agent to use it by name, or let it pick the skill when the description matches.</li>
+<li>Copy the skill folder (for example <code>skills/prompt-to-skill/</code>) into the skills folder your agent reads. For agents that keep skills per project, that is usually a <code>skills/</code> folder in the project.</li>
+<li>If your assistant has no skill folder, open the <code>SKILL.md</code> and paste its contents into the assistant's custom skill, custom instructions, project instructions, or a new chat.</li>
+<li>Ask the AI to use it by name, or let it pick the skill when the description matches.</li>
 </ol>
 <h2 id="adapting-tips">Adapting (tips)</h2>
 <ul>
 <li>Keep the description line specific; agents use it to decide when to load the skill.</li>
-<li>Replace example paths with your own. None of the files need an API key.</li>
+<li>Each file starts with what it needs. If your AI lacks a feature, the skill tells it to fall back or to stop with a clear message instead of pretending.</li>
+<li>Replace example file names with your own. None of the files need an API key.</li>
 <li>If you improve one, a pull request is welcome; see <a href="https://github.com/klanarongz2009-sketch/BlogPost/blob/main/CONTRIBUTING.md">CONTRIBUTING</a>.</li>
 </ul>
 </main>

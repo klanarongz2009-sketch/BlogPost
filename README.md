@@ -9,7 +9,7 @@
 - **About** and **How I use AI**: sub-agents, memory files, verification, scheduled routines, Thai AI quality testing.
 - **AI tools I use**: what I use each assistant or model for. Opinions, not endorsements; nothing is sponsored.
 - **Free skill library** in [`skills/`](skills/): eight standalone `SKILL.md` files for AI agents, MIT licensed.
-- **MiniApps** and **Projects**: new apps built from scratch by different AIs (one AI per app), TER-AI, Tagentic1, and Klasster music.
+- **MiniApps** and **Projects**: new apps built from scratch by different AIs (one AI per app), TER-AI, and Tagentic1.
 - **Posts**, with an [RSS feed](https://klanarongz2009-sketch.github.io/BlogPost/feed.xml).
 
 ## Free skill library

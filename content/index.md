@@ -13,7 +13,7 @@ What you will find here:
 - **[AI tools I use](ai-tools/)**: the assistants and models I actually use, and what I use each one for. Opinions, not endorsements.
 - **[Free skill library](skills/)**: eight standalone `SKILL.md` files you can install in any agent that reads skills. MIT licensed.
 - **[MiniApps](miniapps/)**: new apps built from scratch by different AIs, one AI per app.
-- **[Projects](projects/)**: TER-AI, Tagentic1, and my music as Klasster.
+- **[Projects](projects/)**: TER-AI, Tagentic1, and other projects.
 - **[Thai version](th/)** of the key pages.
 
 ## Latest posts

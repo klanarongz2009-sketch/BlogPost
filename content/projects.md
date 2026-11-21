@@ -1,6 +1,6 @@
 ---
 title: Projects
-summary: TER-AI, Tagentic1, the Telegram bot, and Klasster music.
+summary: TER-AI, Tagentic1, the Telegram bot, and AI memory continuity.
 ---
 # Projects
 
@@ -21,13 +21,3 @@ Tagentic1 is a local thinking-and-agentic model setup inside the TER-AI project:
 ## AI memory continuity
 
 [ai-memory-continuity](https://github.com/klanarongz2009-sketch/ai-memory-continuity): a provider-neutral agent skill for persistent memory across AI sessions (MIT).
-
-## Music as Klasster
-
-I make AI-assisted music as **Klasster**.
-
-- [Klasster on Treblo](https://treblo.com/artist/dgjuyyu209026). Treblo sometimes blocks automated checks with HTTP 403; the page works in a normal browser.
-- [Top song: idc](https://treblo.com/song/f5055d23-5bbe-4a65-9702-434e847e06bd) on Treblo.
-- [My AI music on ElevenMusic](https://elevenmusic.io/artists/klanarong-487021)
-- [AI music playlist on YouTube (7 videos)](https://youtube.com/playlist?list=PLiVKEuzl8bijQXHEZSml5VsaP64m78VCM)
-- [Tech Deep Dive EP.6: Treblo/Sonauto](https://youtube.com/watch?v=UTCHLpRn7Ks) on YouTube

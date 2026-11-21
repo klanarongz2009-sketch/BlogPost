@@ -4,7 +4,7 @@ summary: Bogus is a solo indie AI operator and digital architect.
 ---
 # About
 
-I go by **Bogus**. I make music under the name **Klasster**. I am an indie maker: no company, no team, no budget.
+I go by **Bogus**. I am an indie maker: no company, no team, no budget.
 
 ## What I do
 

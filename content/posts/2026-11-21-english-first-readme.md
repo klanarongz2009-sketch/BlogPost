@@ -5,8 +5,6 @@ summary: Many Thai repos open with Thai and put English at the bottom, or leave 
 ---
 A pattern I often see in repos made by Thai developers: the README opens in Thai, and English comes at the bottom, or not at all. This is my own observation, not a survey. Here is one real example, and then why I do it the other way.
 
-Thai version of this post: [ภาษาไทย](../../th/english-first/)
-
 ## One example: Kreycin
 
 [Kreycin](https://github.com/Kreycin) is a Thai maker who publishes AI animation and tool kits. The work is good, and the kits are clearly written for a Thai audience. That is why I picked it as an example, not to criticize it. I read the README of every repo on the account on 2026-11-21:

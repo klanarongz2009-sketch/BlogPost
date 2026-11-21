@@ -11,6 +11,7 @@ summary: อินดี้เพื่ออินดี้ บล็อกข�
 - [AI tools ที่ผมใช้](../ai-tools/) (English)
 - [Free skill library](../skills/): ไฟล์ `SKILL.md` ฟรี 8 ตัว ใช้ license MIT (English)
 - [MiniApps](../miniapps/) และ [Projects](../projects/) (English)
+- [ทำไม README ของผมขึ้นต้นด้วยภาษาอังกฤษ แล้วแยกภาษาไทยเป็นอีกไฟล์](english-first/)
 - [ขอให้ทำอะไรสักอย่าง](request/)
 
 หน้าภาษาไทยมีเฉพาะหน้าหลัก ส่วนเนื้อหาเต็มเป็นภาษาอังกฤษ เพราะเป็นงานที่เผยแพร่สาธารณะ
